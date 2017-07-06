@@ -6,7 +6,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Logger {
+public class NanoLogger {
 
     /**
      * Defines the current users home directory
@@ -46,7 +46,7 @@ public class Logger {
         return CURRENT_DATE;
     }
 
-    public Logger(String filepath){
+    public NanoLogger(String filepath){
         logfile = new File(filepath);
         try {
             fw = new FileWriter(logfile);
@@ -72,7 +72,7 @@ public class Logger {
      */
     public void log(String message, LogType logType) throws IOException{
         if (logfile == null){
-            throw new UninitializedLoggerError("Unable to log without initializing the `Logger`.");
+            throw new UninitializedLoggerError("Unable to log without initializing the `NanoLogger`.");
         }
         out.write(timestamp.toString() + " " + determineLogType(logType) + message + "\n");
     }
