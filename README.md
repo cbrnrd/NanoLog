@@ -1,4 +1,4 @@
-# NanoLog
+# NanoLog [ ![Download](https://api.bintray.com/packages/codepace/NanoLog/NanoLog/images/download.svg) ](https://bintray.com/codepace/NanoLog/NanoLog/_latestVersion)
 A simple and extremely small logging library for Java.
 
 ## Getting Started
