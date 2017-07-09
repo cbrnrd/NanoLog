@@ -1,7 +1,7 @@
 # NanoLog
 A simple and extremely small logging library for Java.
 
-# Getting Started
+## Getting Started
 
 A simple program using NanoLog looks like so:
 
@@ -16,20 +16,20 @@ public class Example{
 }
 ```
 
-# Installing
+## Installing
 ***I am in the process of uploading the library on jCenter, for now, build the project from source***
 
 To install and use NanoLog in your projects you can download the source and build it with gradle, or
 you can include it in your project dependencies:
 
-### Gradle (build.gradle)
+#### Gradle (build.gradle)
 
 ```
 compile 'io.codepace:nanolog:1.0'
 ```
 
 
-### Maven (pom.xml)
+#### Maven (pom.xml)
 
 ```xml
 <dependency>
@@ -39,16 +39,16 @@ compile 'io.codepace:nanolog:1.0'
 </dependency>
 ```
 
-# Documentation
+## Documentation
 Available [here](https://cbrnrd.github.io/NanoLog/)
 
-# Authors
+## Authors
 - Carter Brainerd (cbrnrd) - [GitHub](https://github.com/cbrnrd)
 
-# Legal stuff 
+## Legal stuff 
 NanoLog is licensed under the MIT license (see [LICENSE](https://github.com/cbrnrd/NanoLog/blob/master/LICENSE))
 
-# Built with
+## Built with
 * [Gradle](https://gradle.org/)
 
 ## Thank you
