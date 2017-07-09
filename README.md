@@ -17,6 +17,8 @@ public class Example{
 ```
 
 # Installing
+***I am in the process of uploading the library on jCenter, for now, build the project from source***
+
 To install and use NanoLog in your projects you can download the source and build it with gradle, or
 you can include it in your project dependencies:
 
