@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="logging" target="1.5" />
+      <module name="logging" target="1.8" />
       <module name="logging_main" target="1.8" />
       <module name="logging_test" target="1.8" />
     </bytecodeTargetLevel>

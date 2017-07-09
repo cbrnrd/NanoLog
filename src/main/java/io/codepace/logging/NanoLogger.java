@@ -6,6 +6,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static io.codepace.logging.Helpers.stackTraceToString;
+
 public class NanoLogger {
 
     /**
@@ -48,7 +50,11 @@ public class NanoLogger {
 
     public NanoLogger(String filepath){
         logfile = new File(filepath);
+
         try {
+            if (!logfile.exists()){
+                logfile.createNewFile();
+            }
             fw = new FileWriter(logfile);
             out = new BufferedWriter(fw);
         } catch (IOException ioe){
@@ -62,6 +68,14 @@ public class NanoLogger {
      */
     public String getLogPath(){
         return logfile.getAbsolutePath();
+    }
+
+    /**
+     * Gets the most recent message that was logged
+     * @return the most recent logged message
+     */
+    public String getLastLog(){
+        return lastLog;
     }
 
     /**
@@ -91,6 +105,7 @@ public class NanoLogger {
      * @param message the message to log
      */
     public void info(String message){
+        lastLog = message;
         try{
             log(message, LogType.INFO);
         } catch (IOException ioe){
@@ -103,6 +118,7 @@ public class NanoLogger {
      * @param message the message to log
      */
     public void success(String message){
+        lastLog = message;
         try{
             log(message, LogType.SUCCESS);
         } catch (IOException ioe){
@@ -115,8 +131,23 @@ public class NanoLogger {
      * @param message the message the log
      */
     public void error(String message){
+        lastLog = message;
         try{
             log(message, LogType.ERROR);
+        } catch (IOException ioe){
+            ioe.printStackTrace();
+        }
+    }
+
+
+    /**
+     * Logs the stack trace of a {@link Throwable}
+     * @param error the throwable to log
+     */
+    public void error(Throwable error){
+        try{
+            log("Exception occurred: " + error.getMessage(), LogType.ERROR);
+            log(stackTraceToString(error), null);
         } catch (IOException ioe){
             ioe.printStackTrace();
         }
@@ -127,6 +158,7 @@ public class NanoLogger {
      * @param message the message to write
      */
     public void debug(String message){
+        lastLog = message;
         try{
             log(message, LogType.DEBUG);
         } catch (IOException ioe){
@@ -139,6 +171,7 @@ public class NanoLogger {
      * @param message the message to log
      */
     public void fatal(String message){
+        lastLog = message;
         try{
             log(message, LogType.DEBUG);
         } catch (IOException ioe){
