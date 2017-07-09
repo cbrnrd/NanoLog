@@ -38,7 +38,7 @@ compile 'io.codepace:nanolog:1.0'
 ```
 
 # Documentation
-*Coming soon :)*
+Available [here](https://cbrnrd.github.io/NanoLog/)
 
 # Authors
 - Carter Brainerd (cbrnrd) - [GitHub](https://github.com/cbrnrd)
