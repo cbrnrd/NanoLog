@@ -1,6 +1,7 @@
 package io.codepace.logging;
 
 import java.io.*;
+import java.nio.channels.FileChannel;
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -8,6 +9,9 @@ import java.util.Date;
 
 import static io.codepace.logging.Helpers.stackTraceToString;
 
+/**
+ * The main class to instantiate for logging
+ */
 public class NanoLogger {
 
     /**
@@ -48,12 +52,40 @@ public class NanoLogger {
         return CURRENT_DATE;
     }
 
+    /**
+     * Instantiates a new <code>NanoLogger</code> object and creates the logfile at <code>filepath</code>
+     * @param filepath the path to save the log at
+     */
     public NanoLogger(String filepath){
         logfile = new File(filepath);
 
         try {
             if (!logfile.exists()){
                 logfile.createNewFile();
+            }
+            fw = new FileWriter(logfile);
+            out = new BufferedWriter(fw);
+        } catch (IOException ioe){
+            ioe.printStackTrace();
+        }
+    }
+
+    /**
+     * Instantiates a new <code>NanoLogger</code> object and creates the logfile at <code>filepath</code>
+     * @param filepath the path to save the log at
+     * @param truncate whether or not to truncate the file if it already exists
+     */
+    public NanoLogger(String filepath, boolean truncate){
+        logfile = new File(filepath);
+
+        try {
+            if (!logfile.exists()){
+                logfile.createNewFile();
+            } else {
+                // Truncate file to 0
+                FileChannel out = new FileOutputStream(logfile, true).getChannel();
+                out.truncate(0);
+                out.close();
             }
             fw = new FileWriter(logfile);
             out = new BufferedWriter(fw);
