@@ -6,7 +6,7 @@ A simple and extremely small logging library for Java.
 A simple program using NanoLog looks like so:
 
 ```java
-import io.codepace.logging.NanoLog;
+import io.codepace.nanolog.NanoLog;
 
 public class Example{
   public static void main(String[] args){

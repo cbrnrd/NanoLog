@@ -1,4 +1,4 @@
-package io.codepace.logging;
+package io.codepace.nanolog;
 
 /**
  * This should only be used when the user is trying to log without initializing the file

@@ -13,6 +13,8 @@
       <module name="logging" target="1.8" />
       <module name="logging_main" target="1.8" />
       <module name="logging_test" target="1.8" />
+      <module name="nanolog_main" target="1.8" />
+      <module name="nanolog_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

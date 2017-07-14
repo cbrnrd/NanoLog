@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.codepace</groupId>
-    <artifactId>logging</artifactId>
-    <version>1.0</version>
+    <artifactId>nanolog</artifactId> <!-- was nanolog -->
+    <version>1.1</version>
 
     <build>
         <plugins>

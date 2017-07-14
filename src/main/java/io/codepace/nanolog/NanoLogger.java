@@ -1,4 +1,4 @@
-package io.codepace.logging;
+package io.codepace.nanolog;
 
 import java.io.*;
 import java.nio.channels.FileChannel;
@@ -7,24 +7,14 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static io.codepace.logging.Helpers.stackTraceToString;
+import static io.codepace.nanolog.Helpers.*;
 
 /**
  * The main class to instantiate for logging
  */
 public class NanoLogger {
 
-    /**
-     * Defines the current users home directory
-     */
-    public static final String HOME_DIR = System.getProperty("user.home");
 
-    // Constants
-    private final String INFO_LOG    = "[INFO] ";
-    private final String DEBUG_LOG   = "[DEBUG] ";
-    private final String ERROR_LOG   = "[ERROR] ";
-    private final String SUCCESS_LOG = "[SUCCESS] ";
-    private final String FATAL_LOG   = "[FATAL] ";
     private final Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
     // Get the current date
@@ -41,6 +31,8 @@ public class NanoLogger {
 
     // For getLastLog()
     String lastLog = "";
+    boolean isClosed = false;
+    boolean firstProgramWrite = true;
 
 
 
@@ -63,8 +55,7 @@ public class NanoLogger {
             if (!logfile.exists()){
                 logfile.createNewFile();
             }
-            fw = new FileWriter(logfile);
-            out = new BufferedWriter(fw);
+
         } catch (IOException ioe){
             ioe.printStackTrace();
         }
@@ -114,14 +105,53 @@ public class NanoLogger {
      * A general function to log to the log file
      * @param message the message to log
      * @param logType the type of message the message is
-     * @throws IOException if there was an error writing to the log file
+     * @throws ClosedLoggerError if the logger is already closed
      */
-    public void log(String message, LogType logType) throws IOException{
-        if (logfile == null){
-            throw new UninitializedLoggerError("Unable to log without initializing the `NanoLogger`.");
+    public void log(String message, LogType logType) {
+        if (logfile == null) throw new UninitializedLoggerError("Unable to log without initializing the `NanoLogger`.");
+        if (isClosed) throw new ClosedLoggerError();
+        try(
+                FileWriter fw = new FileWriter(logfile, true);
+                BufferedWriter out = new BufferedWriter(fw)){
+            if (firstProgramWrite) out.write("");
+            out.write(timestamp.toString() + " " + determineLogType(logType) + message + LINE_SEPERATOR);
+        } catch (IOException ioe){
+            ioe.printStackTrace();
         }
-        out.write(timestamp.toString() + " " + determineLogType(logType) + message + "\n");
     }
+
+    /*
+    /**
+     * Logs the message with the '{}' replaced by each <code>subs</code> block respectively
+     * <p>
+     *     <b>Note: This is experimental, do not expect perfect results with this</b>
+     *     <b>Also note: this <i>will not</i> replace '{}' that are not between spaces</b>
+     * </p>
+     * @param message The message to log
+     * @param type The type of log the message is
+     * @param subs The replacement strings
+    public void log(String message, LogType type, String... subs){
+
+        StringBuilder builder = new StringBuilder();
+        String[] split = message.split(" ");
+
+        for (int i = 0; i < split.length; i++){
+
+            int subsCounter = 0;
+            String s = split[i];
+            if (!s.equals("{}")){
+                builder.append(s);
+            } else {
+                builder.append(subs[subsCounter]);
+                ++subsCounter;
+            }
+        }
+
+        log(builder.toString(), type);
+
+    }
+    */
+
 
     private String determineLogType(LogType type){
         if (type == LogType.DEBUG) return DEBUG_LOG;
@@ -129,6 +159,8 @@ public class NanoLogger {
         else if (type == LogType.INFO) return INFO_LOG;
         else if (type == LogType.SUCCESS) return SUCCESS_LOG;
         else if (type == LogType.FATAL) return FATAL_LOG;
+        else if (type == LogType.TRACE) return TRACE_LOG;
+        else if (type == LogType.NONE) return NONE_LOG;
         else return "";
     }
 
@@ -138,11 +170,7 @@ public class NanoLogger {
      */
     public void info(String message){
         lastLog = message;
-        try{
-            log(message, LogType.INFO);
-        } catch (IOException ioe){
-            ioe.printStackTrace();
-        }
+        log(message, LogType.INFO);
     }
 
     /**
@@ -151,11 +179,7 @@ public class NanoLogger {
      */
     public void success(String message){
         lastLog = message;
-        try{
-            log(message, LogType.SUCCESS);
-        } catch (IOException ioe){
-            ioe.printStackTrace();
-        }
+        log(message, LogType.SUCCESS);
     }
 
     /**
@@ -164,25 +188,18 @@ public class NanoLogger {
      */
     public void error(String message){
         lastLog = message;
-        try{
-            log(message, LogType.ERROR);
-        } catch (IOException ioe){
-            ioe.printStackTrace();
-        }
+        log(message, LogType.ERROR);
+
     }
 
 
     /**
-     * Logs the stack trace of a {@link Throwable}
+     * Logs the stack trace of a {@link Throwable}. The message of the exception will be included in the log
      * @param error the throwable to log
      */
-    public void error(Throwable error){
-        try{
-            log("Exception occurred: " + error.getMessage(), LogType.ERROR);
-            log(stackTraceToString(error), null);
-        } catch (IOException ioe){
-            ioe.printStackTrace();
-        }
+    public void stacktrace(Throwable error){
+        log("Exception occurred: " + error.getMessage() + "\n", LogType.TRACE);
+        log(stackTraceToString(error), null);
     }
 
     /**
@@ -191,11 +208,7 @@ public class NanoLogger {
      */
     public void debug(String message){
         lastLog = message;
-        try{
-            log(message, LogType.DEBUG);
-        } catch (IOException ioe){
-            ioe.printStackTrace();
-        }
+        log(message, LogType.DEBUG);
     }
 
     /**
@@ -204,11 +217,17 @@ public class NanoLogger {
      */
     public void fatal(String message){
         lastLog = message;
-        try{
-            log(message, LogType.DEBUG);
-        } catch (IOException ioe){
-            ioe.printStackTrace();
-        }
+        log(message, LogType.DEBUG);
+    }
+
+    /**
+     * Log a 'debug' message
+     *
+     * @param message the message to write
+     */
+    public void none(String message){
+        lastLog = message;
+        log(message, LogType.NONE);
     }
 
 }
