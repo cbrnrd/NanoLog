@@ -1,9 +1,9 @@
-# NanoLog [ ![Download](https://api.bintray.com/packages/codepace/NanoLog/NanoLog/images/download.svg) ](https://bintray.com/codepace/NanoLog/NanoLog/_latestVersion)
+# NanoLog [![Download](https://api.bintray.com/packages/codepace/NanoLog/NanoLog/images/download.svg)](https://bintray.com/codepace/NanoLog/NanoLog/_latestVersion)
 A simple and extremely small logging library for Java.
 
 ## Getting Started
 
-A simple program using NanoLog looks like so:
+A simple program using the non-static `NanoLog` class looks like so:
 
 ```java
 import io.codepace.nanolog.NanoLog;
@@ -16,8 +16,21 @@ public class Example{
 }
 ```
 
+or using the static `Logger` class:
+
+```java
+import io.codepace.nanolog.Logger;
+import io.codepace.nanolog.Helpers.*;
+
+public class Example{
+  public static void main(String[] args){
+    Logger.init(HOME_DIR + "test.log");
+    Logger.info("Informational message");
+  }
+}
+```
+
 ## Installing
-***I am in the process of uploading the library on jCenter, for now, build the project from source***
 
 To install and use NanoLog in your projects you can download the source and build it with gradle, or
 you can include it in your project dependencies:
@@ -25,7 +38,7 @@ you can include it in your project dependencies:
 #### Gradle (build.gradle)
 
 ```
-compile 'io.codepace:nanolog:1.0'
+compile 'io.codepace:nanolog:1.1'
 ```
 
 
@@ -35,7 +48,7 @@ compile 'io.codepace:nanolog:1.0'
 <dependency>
   <groupId>io.codepace</groupId>
   <artifactId>nanolog</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
 </dependency>
 ```
 
@@ -50,6 +63,8 @@ NanoLog is licensed under the MIT license (see [LICENSE](https://github.com/cbrn
 
 ## Built with
 * [Gradle](https://gradle.org/)
+* [Maven](https://maven.apache.org/)
+* [Bintray](https://bintray.com)
 
 ## Thank you
 
