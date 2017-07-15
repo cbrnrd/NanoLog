@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d61275b3-c7a3-4da0-803d-dd340e27050e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/ClosedLoggerError.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Logger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/MultipleLoggersException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/logging_main.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/logging_test.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/logging-1.0-javadoc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/logging-1.0-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/logging-1.0.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/codepace/logging/Helpers.java" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Helpers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/codepace/logging/LogType.java" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/LogType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/codepace/logging/NanoLogger.java" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/codepace/logging/UninitializedLoggerError.java" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/UninitializedLoggerError.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/io/codepace/logging/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/package-info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/fileContent/fileContent.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="d61275b3-c7a3-4da0-803d-dd340e27050e" name="Default" comment="Major 1.1 update">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/logging.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/allclasses-frame.html" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-all.html" afterPath="$PROJECT_DIR$/docs/index-all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/constant-values.html" afterPath="$PROJECT_DIR$/docs/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deprecated-list.html" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/help-doc.html" afterPath="$PROJECT_DIR$/docs/help-doc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" />
@@ -39,18 +22,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/Helpers.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/Helpers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/LogType.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/LogType.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/NanoLogger.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/NanoLogger.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/UninitializedLoggerError.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/UninitializedLoggerError.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/package-frame.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/package-summary.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/io/codepace/logging/package-tree.html" afterPath="$PROJECT_DIR$/docs/io/codepace/logging/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/overview-tree.html" afterPath="$PROJECT_DIR$/docs/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/package-list" afterPath="$PROJECT_DIR$/docs/package-list" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/serialized-form.html" afterPath="$PROJECT_DIR$/docs/serialized-form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -93,10 +67,11 @@
       <file leaf-file-name="NanoLogger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
+            <state relative-caret-position="3672">
+              <caret line="229" column="35" lean-forward="false" selection-start-line="229" selection-start-column="35" selection-end-line="229" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1500076105498" expanded="true" signature="2230:2316" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -105,13 +80,10 @@
       <file leaf-file-name="Logger.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="222" column="50" lean-forward="false" selection-start-line="222" selection-start-column="50" selection-end-line="222" selection-end-column="50" />
+            <state relative-caret-position="34">
+              <caret line="223" column="6" lean-forward="false" selection-start-line="223" selection-start-column="6" selection-end-line="223" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3399#3400#0" expanded="true" />
-                <element signature="e#3609#3610#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,7 +92,7 @@
       <file leaf-file-name="Helpers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Helpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="153">
               <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -165,7 +137,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -346,6 +318,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="4498475671457" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="747703857" />
       </map>
     </option>
@@ -472,9 +445,9 @@
         <option value="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Logger.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Logger.java" />
       </list>
     </option>
   </component>
@@ -497,8 +470,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="512" />
+    <option name="y" value="-17" />
     <option name="width" value="1061" />
     <option name="height" value="1047" />
   </component>
@@ -519,51 +492,25 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="logging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="logging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="logging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nanolog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logging" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logging" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="logging" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,6 +522,116 @@
       <recent name="C:\Users\Carter\IdeaProjects\logging" />
       <recent name="C:\Users\Carter\IdeaProjects\logging\docs" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -765,7 +822,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499622175959</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Major 1.1 update">
+      <created>1500076015677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1500076015677</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -791,13 +855,13 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13646056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1380597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -848,13 +912,53 @@
     <MESSAGE value="Update javadoc path" />
     <MESSAGE value="Add jars and update some stuff" />
     <MESSAGE value="Add maven pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add maven pom" />
+    <MESSAGE value="Major 1.1 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Major 1.1 update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3672">
+          <caret line="229" column="35" lean-forward="false" selection-start-line="229" selection-start-column="35" selection-end-line="229" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1500076105498" expanded="true" signature="2230:2316" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="222" column="50" lean-forward="false" selection-start-line="222" selection-start-column="50" selection-end-line="222" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -869,6 +973,7 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1500076105498" expanded="true" signature="2230:2316" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -904,8 +1009,8 @@
         <state relative-caret-position="187">
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -918,14 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/logging-1.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/logging-1.0.pom" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -965,8 +1063,8 @@
         <state relative-caret-position="187">
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,6 +1083,7 @@
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1500076105498" expanded="true" signature="2230:2316" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1003,6 +1102,7 @@
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1500076105498" expanded="true" signature="2230:2316" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1020,8 +1120,8 @@
         <state relative-caret-position="187">
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1044,14 +1144,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/logging/LoggingException.java" />
     <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    <entry file="file://$PROJECT_DIR$/target/logging-1.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/logging-1.0.pom" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1064,7 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,8 +1172,8 @@
         <state relative-caret-position="119">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1092,8 +1183,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="92" lean-forward="false" selection-start-line="3" selection-start-column="92" selection-end-line="3" selection-end-column="92" />
           <folding>
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,23 +1193,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="55" lean-forward="false" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/LogType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1139,16 +1217,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/NanoLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
+        <state relative-caret-position="3672">
+          <caret line="229" column="35" lean-forward="false" selection-start-line="229" selection-start-column="35" selection-end-line="229" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1500076105498" expanded="true" signature="2230:2316" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1163,7 +1241,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="153">
           <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1173,13 +1251,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/codepace/nanolog/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="222" column="50" lean-forward="false" selection-start-line="222" selection-start-column="50" selection-end-line="222" selection-end-column="50" />
+        <state relative-caret-position="34">
+          <caret line="223" column="6" lean-forward="false" selection-start-line="223" selection-start-column="6" selection-end-line="223" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3399#3400#0" expanded="true" />
-            <element signature="e#3609#3610#0" expanded="true" />
           </folding>
         </state>
       </provider>

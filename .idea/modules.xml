@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/logging.iml" filepath="$PROJECT_DIR$/.idea/modules/logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/nanolog.iml" filepath="$PROJECT_DIR$/.idea/modules/nanolog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/nanolog_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nanolog_main.iml" group="nanolog" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/nanolog_test.iml" filepath="$PROJECT_DIR$/.idea/modules/nanolog_test.iml" group="nanolog" />
