@@ -52,6 +52,10 @@ compile 'io.codepace:nanolog:1.1'
 </dependency>
 ```
 
+## Design Highlights
+- Static and non-static logging classes for ease of use and 
+- Simple and easy to use API for rapid development and integration with your projects.
+
 ## Documentation
 Available [here](https://cbrnrd.github.io/NanoLog/)
 
