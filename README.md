@@ -55,6 +55,7 @@ compile 'io.codepace:nanolog:1.1'
 ## Design Highlights
 - Static and non-static logging classes for ease of use and 
 - Simple and easy to use API for rapid development and integration with your projects.
+- Very small JAR size (around 5K!)
 
 ## Documentation
 Available [here](https://cbrnrd.github.io/NanoLog/)
