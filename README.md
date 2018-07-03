@@ -82,3 +82,7 @@ If you're feeling generous, donations are always appreciated:
 LQRUJUpSkmi5BfT6nyPVNKKoLWbnpZ64sL (Ł, LTC)
 https://www.paypal.me/0xCB (PayPal)
 ```
+
+<p align="center">
+  <img height="100" width="300" src="https://i.imgur.com/obHmDnX.png">
+</p>
